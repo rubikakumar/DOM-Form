@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+
+    <p id="description">
+        Basic Information About The Person
+    </p>
+
+    <form id="form"> 
+        <div class="form-group"> 
+            <label for="firstname">First Name:</label>
+            <input type="text" id="first-name" name="firstName" placeholder="Enter your first name" required><br>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="last-name" name="lastName" placeholder="Enter your last name" required><br>
+            <label for="pincode">Pincode:</label>
+            <input type="text" id="pincode" name="pincode" placeholder="Enter your pincode" required><br>
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" placeholder="Enter your address" required></textarea><br>
+       
+
+            <div class="gender-container">
+                <label for="gender" class="gender-label">Gender:</label>
+                <div class="radio-buttons">
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </div>
+            </div>
+
+            <label for="food">Choice of Food:</label>
+            <select id="food" name="food" required multiple size="1">
+                <option>Pizza🍕</option>
+                <option>Burger🍔</option>
+                <option>Pasta🍝</option>
+                <option>Fried Rice🍚</option>
+                <option>Tacos🌮</option>
+            </select><br>
+            
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" placeholder="Enter your state" required><br>
+
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" placeholder="Enter your country" required><br>
+
+        <input type="submit" value="Submit" id="submit" class="btn btn-primary"> 
+    </div> 
+    </form>
+
+    <div id="tableContainer"> 
+        <table id="dataTable" class="table">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Address</th>
+                    <th>Pincode</th>
+                    <th>Gender</th>
+                    <th>Food</th>
+                    <th>State</th>
+                    <th>Country</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </div>
+    
+
+<script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+     <script src="script.js"></script>
+
+</body>
+</html>
